@@ -1338,6 +1338,9 @@ button:not(:disabled) {
   .page-next-level .page-next {
     top: 70px;
   }
+  .Tonana-logo {
+    width: 150%;
+  }
 }
 
 .breadcrumb {
@@ -2687,7 +2690,7 @@ p {
 
 @media (max-width: 991px) {
   #topnav {
-    background-color: #ffffff;
+    background-color: #FFC916 !important;
     -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
             box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
     min-height: 74px;
@@ -2795,9 +2798,9 @@ p {
     height: auto;
     padding-bottom: 0;
     overflow: auto;
-    border-top: 1px solid #f1f3f9;
-    border-bottom: 1px solid #f1f3f9;
-    background-color: #ffffff;
+    border-top: 1px solid #FFC916 !important;
+    border-bottom: 1px solid #FFC916 !important;
+    background-color: #FFC916 !important;
   }
   #navigation.open {
     display: block;

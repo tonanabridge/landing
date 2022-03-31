@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 //import images
-import LaptopChat from '../../assets/images/Laptop.png';
 import { Col, Container, Row } from 'reactstrap';
 import Hero from '../../assets/images/hero.png';
 import Connect from '../../assets/images/Connect.svg';
@@ -46,7 +45,7 @@ export default class Main extends Component {
                   </li>
                 </ul>
                 <a
-                  href=""
+                  href="https://www.notion.so/f4f76f23b29f41fe9d4aee3c745a7202?v=f02e74972f594f358eec4a7cffb2741c"
                   className="mt-3 h6 btn btn-warning btn-pills"
                 >
                   Find Out More <i className="uil uil-angle-right-b"></i>
@@ -90,7 +89,7 @@ export default class Main extends Component {
                   </li>
                 </ul>
                 <a
-                  href=""
+                  href="https://www.notion.so/f4f76f23b29f41fe9d4aee3c745a7202?v=f02e74972f594f358eec4a7cffb2741c"
                   className="mt-3 h6 btn btn-warning btn-pills"
                 >
                   Find Out More <i className="uil uil-angle-right-b"></i>

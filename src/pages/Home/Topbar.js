@@ -3,15 +3,15 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import ScrollspyNav from "./scrollSpy";
 
-import Logo from "../../assets/images/tonana.svg";
+import Logo from "../../assets/images/tonana.png";
 
 class Topbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "about", navheading: "About", href: "" },
-        { id: 2, idnm: "roadmap", navheading: "Roadmap", href: "" },
+        { id: 1, idnm: "about", navheading: "About", href: "https://twitter.com/TONANAbridge" },
+        { id: 2, idnm: "roadmap", navheading: "Roadmap", href: "https://www.notion.so/f4f76f23b29f41fe9d4aee3c745a7202?v=f02e74972f594f358eec4a7cffb2741c" },
         { id: 3, idnm: "team", navheading: "Team", href: "https://www.linkedin.com/company/tonana/" },
       ],
       isOpen: false,

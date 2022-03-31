@@ -7,8 +7,8 @@ import FeatherIcon from "feather-icons-react";
 
 
 //Import Images
-import logolight from "../../assets/images/tonana.svg";
-import logodark from "../../assets/images/tonana.svg";
+import logolight from "../../assets/images/tonana.png";
+import logodark from "../../assets/images/tonana.png";
 
 class Footer extends Component {
   constructor(props) {
