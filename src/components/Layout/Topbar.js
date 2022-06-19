@@ -346,7 +346,6 @@ class Topbar extends Component {
                             navLink.isOpenSubMenu ? 'submenu open' : 'submenu'
                           }
                         >
-
                           {navLink.child.map((childArray, childKey) =>
                             childArray.nestedChild ? (
                               // sub menu item - Level 2

@@ -3,49 +3,35 @@ import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import Hero from '../../assets/images/hero.png';
 import Connect from '../../assets/images/Connect.svg';
+import * as Styled from './IntroductionBlock';
+import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 export default class Main extends Component {
   render() {
     return (
       <React.Fragment>
         <Container className="mt-100 mt-60">
-          <Row className="align-items-center">
-            <Col lg={7} md={6}>
+          <Row className="align-items-space-between">
+            <Col lg={5} md={6} style={{ margin: '-40px 20px 0 80px' }}>
               <img src={Hero} className="main-ill img-fluid" alt="" />
             </Col>
 
             <Col lg={5} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
               <div className="section-title ms-lg-5">
                 <h4 className="title mb-4">What's tonana</h4>
-                <ul className="list-unstyled text-main text-dark">
-                  <li className="mb-0">
-                    <span className="text-warning h4 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    Fast <span className="text-warning h4 me-2">cross-chain</span>
-                    integration
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-warning h4 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    Wrapped assets <span className="text-warning">swapping</span>
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-warning h4 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    NFTs as a tool <span className="text-warning">for less commision</span> 
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-warning h4 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    GameFi <span className="text-warning">aggregator</span>
-                  </li>
-                </ul>
+                Tonana Defi Hub is a decentralized software-development
+                organization working hand-in-hand with entrepreneurs and
+                organizations inside and outside Web 3.0
+                <br />
+                <br />
+                With rich experience in commercial blockchain development and
+                participation in the blockchain community, Tonan's team is
+                committed to developing and testing cutting-edge ideas and
+                business models that make sense.
+                <br />
+                <br />
                 <a
-                  href="https://www.notion.so/f4f76f23b29f41fe9d4aee3c745a7202?v=f02e74972f594f358eec4a7cffb2741c"
+                  href="https://wiki.tonana.org/"
                   className="mt-3 h6 btn btn-warning btn-pills"
                 >
                   Find Out More <i className="uil uil-angle-right-b"></i>
@@ -55,51 +41,87 @@ export default class Main extends Component {
           </Row>
         </Container>
 
-        <Container className="mt-100 mt-60">
-          <Row className="align-items-center">
-            <Col
-              lg={7}
-              md={6}
-              className="order-2 order-md-1 mt-4 mt-sm-0 pt-sm-0"
-            >
-              <div className="section-title me-lg-5">
-                <h4 className="title mb-4">WHY Tonana</h4>
-                <ul className="list-unstyled text-main text-dark">
-                  <li className="mb-0">
-                    <span className="text-warning h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    Community
- <span className="text-warning"> </span> 
-                    driven
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-warning h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    Hackaton
-                    <span className="text-warning"> </span>
-                    created
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-warning h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    First cross-chain payment gateway 
-                  </li>
-                </ul>
-                <a
-                  href="https://www.notion.so/f4f76f23b29f41fe9d4aee3c745a7202?v=f02e74972f594f358eec4a7cffb2741c"
-                  className="mt-3 h6 btn btn-warning btn-pills"
-                >
-                  Find Out More <i className="uil uil-angle-right-b"></i>
-                </a>
+        <Container className="">
+          <Row
+            className="align-items-center"
+            style={{ margin: '200px 0 200px 0' }}
+          >
+            <Col className="order-2 order-md-1 mt-4 mt-sm-0 pt-sm-0">
+              <div className="section-title ">
+                <h4 className="title mb-4">FAQs</h4>
+
+                <Styled.BottomContent>
+                  <Styled.Box>
+                    <div>
+                      <Styled.BoxHeading>
+                        What is Community Funding
+                      </Styled.BoxHeading>
+                      <Styled.BoxText>
+                        Before getting started, let's dig into Tonana Launchpad
+                        and what it stands for
+                      </Styled.BoxText>
+                    </div>
+                    <Styled.LearnMore>
+                      <p>Learn More</p>
+                      <Styled.IconWrapper>
+                        <ChevronRightIcon />
+                      </Styled.IconWrapper>
+                    </Styled.LearnMore>
+                  </Styled.Box>
+                  <Styled.Box>
+                    <div>
+                      <Styled.BoxHeading>
+                        Proof-of-work Vesting System
+                      </Styled.BoxHeading>
+                      <Styled.BoxText>
+                        Get to know more about the Tonana Security of Investment
+                      </Styled.BoxText>
+                    </div>
+                    <Styled.LearnMore>
+                      <p>Learn More</p>
+                      <Styled.IconWrapper>
+                        <ChevronRightIcon />
+                      </Styled.IconWrapper>
+                    </Styled.LearnMore>
+                  </Styled.Box>
+                  <Styled.Box>
+                    <div>
+                      <Styled.BoxHeading>How to get started</Styled.BoxHeading>
+                      <Styled.BoxText>
+                        Time for action! This guide enlights you on your crypto
+                        investment path
+                      </Styled.BoxText>
+                    </div>
+                    <Styled.LearnMore>
+                      <p>Learn More</p>
+                      <Styled.IconWrapper>
+                        <ChevronRightIcon />
+                      </Styled.IconWrapper>
+                    </Styled.LearnMore>
+                  </Styled.Box>
+                  <Styled.Box>
+                    <div>
+                      <Styled.BoxHeading>
+                        Research & Develoment
+                      </Styled.BoxHeading>
+                      <Styled.BoxText>
+                        Learn how to use DeFi, DAO and Blockchain to fund
+                        startup development in the article.
+                      </Styled.BoxText>
+                    </div>
+                    <Styled.LearnMore>
+                      <p>Learn More</p>
+                      <Styled.IconWrapper>
+                        <ChevronRightIcon />
+                      </Styled.IconWrapper>
+                    </Styled.LearnMore>
+                  </Styled.Box>
+                </Styled.BottomContent>
               </div>
             </Col>
-
-            <Col lg={5} md={6} className="order-1 order-md-2">
+            {/* <Col lg={5} md={6} className="order-1 order-md-2">
               <img src={Connect} className="main-ill img-fluid" alt="" />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </React.Fragment>

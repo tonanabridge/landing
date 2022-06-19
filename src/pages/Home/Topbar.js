@@ -1,18 +1,39 @@
-import React, { Component } from "react";
-import { Container } from "reactstrap";
-import { Link } from "react-router-dom";
-import ScrollspyNav from "./scrollSpy";
+import React, { Component } from 'react';
+import { Container } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import ScrollspyNav from './scrollSpy';
 
-import Logo from "../../assets/images/tonana.png";
+import Logo from '../../assets/images/tonana.png';
 
 class Topbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "about", navheading: "About", href: "https://twitter.com/TONANAbridge" },
-        { id: 2, idnm: "roadmap", navheading: "Roadmap", href: "https://www.notion.so/f4f76f23b29f41fe9d4aee3c745a7202?v=f02e74972f594f358eec4a7cffb2741c" },
-        { id: 3, idnm: "team", navheading: "Team", href: "https://www.linkedin.com/company/tonana/" },
+        {
+          id: 1,
+          idnm: 'about',
+          navheading: 'Docs',
+          href: 'https://wiki.tonana.org/',
+        },
+        {
+          id: 2,
+          idnm: 'events',
+          navheading: 'Events',
+          href: 'https://wiki.tonana.org/events/we-organize',
+        },
+        {
+          id: 3,
+          idnm: 'team',
+          navheading: 'Team',
+          href: 'https://wiki.tonana.org/tonana-defi-hub/dao/developers',
+        },
+        {
+          id: 4,
+          idnm: 'blog',
+          navheading: 'Blog',
+          href: 'https://twitter.com/tonana_dao',
+        },
       ],
       isOpen: false,
     };
@@ -50,7 +71,7 @@ class Topbar extends Component {
                   to="#"
                   onClick={this.toggleLine}
                   className={
-                    this.state.isOpen ? "navbar-toggle open" : "navbar-toggle"
+                    this.state.isOpen ? 'navbar-toggle open' : 'navbar-toggle'
                   }
                 >
                   <div className="lines">
@@ -69,7 +90,7 @@ class Topbar extends Component {
             >
               <div
                 id="navigation"
-                style={{ display: this.state.isOpen ? "block" : "none" }}
+                style={{ display: this.state.isOpen ? 'block' : 'none' }}
               >
                 <ul className="navigation-menu">
                   {this.state.navItems.map((item, key) => (
