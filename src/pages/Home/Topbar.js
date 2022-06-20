@@ -62,7 +62,7 @@ class Topbar extends Component {
                 rel="noopener noreferrer"
                 className="btn btn-warning btn-pills"
               >
-                Launch App
+                Launch bridge app
               </a>
             </div>
             <div className="menu-extras">

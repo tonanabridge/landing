@@ -141,10 +141,17 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  svg {
+    margin: -3px 0 0 -10px;
+  }
 `;
 
 export const BoxHeading = styled.h2`
-  font-size: 22px;
+  font-size: 18px !important;
   font-weight: 700;
   margin-bottom: 10px;
 `;
@@ -159,7 +166,7 @@ export const LearnMore = styled.div`
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 4px;
   cursor: pointer;
 `;
 

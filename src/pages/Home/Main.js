@@ -54,67 +54,90 @@ export default class Main extends Component {
                   <Styled.Box>
                     <div>
                       <Styled.BoxHeading>
-                        What is Community Funding
+                        What is Tonana Launchpad?
                       </Styled.BoxHeading>
                       <Styled.BoxText>
-                        Before getting started, let's dig into Tonana Launchpad
-                        and what it stands for
+                        Tonana Launchpad is a funding platform for creative and
+                        research projects.
                       </Styled.BoxText>
                     </div>
-                    <Styled.LearnMore>
-                      <p>Learn More</p>
-                      <Styled.IconWrapper>
-                        <ChevronRightIcon />
-                      </Styled.IconWrapper>
-                    </Styled.LearnMore>
+                    <a
+                      href={
+                        'https://wiki.tonana.org/tonana-defi-hub/launchpad/whitepaper/what-is-tonana-launchpad'
+                      }
+                    >
+                      <Styled.LearnMore>
+                        <p>Learn More</p>
+                        <Styled.IconWrapper>
+                          <ChevronRightIcon />
+                        </Styled.IconWrapper>
+                      </Styled.LearnMore>
+                    </a>
                   </Styled.Box>
                   <Styled.Box>
                     <div>
                       <Styled.BoxHeading>
-                        Proof-of-work Vesting System
+                        How tonana bridge works?
                       </Styled.BoxHeading>
                       <Styled.BoxText>
-                        Get to know more about the Tonana Security of Investment
+                        Tonana cross-chain bridge uses a lock-and-mint model for
+                        moving value between chains.
                       </Styled.BoxText>
                     </div>
-                    <Styled.LearnMore>
-                      <p>Learn More</p>
-                      <Styled.IconWrapper>
-                        <ChevronRightIcon />
-                      </Styled.IconWrapper>
-                    </Styled.LearnMore>
-                  </Styled.Box>
-                  <Styled.Box>
-                    <div>
-                      <Styled.BoxHeading>How to get started</Styled.BoxHeading>
-                      <Styled.BoxText>
-                        Time for action! This guide enlights you on your crypto
-                        investment path
-                      </Styled.BoxText>
-                    </div>
-                    <Styled.LearnMore>
-                      <p>Learn More</p>
-                      <Styled.IconWrapper>
-                        <ChevronRightIcon />
-                      </Styled.IconWrapper>
-                    </Styled.LearnMore>
+                    <a
+                      href={
+                        'https://wiki.tonana.org/tonana-defi-hub/bridge/whitepaper/how-it-works'
+                      }
+                    >
+                      <Styled.LearnMore>
+                        <p>Learn More</p>
+                        <Styled.IconWrapper>
+                          <ChevronRightIcon />
+                        </Styled.IconWrapper>
+                      </Styled.LearnMore>
+                    </a>
                   </Styled.Box>
                   <Styled.Box>
                     <div>
                       <Styled.BoxHeading>
-                        Research & Develoment
+                        Wich chains Tonana support?
                       </Styled.BoxHeading>
                       <Styled.BoxText>
-                        Learn how to use DeFi, DAO and Blockchain to fund
-                        startup development in the article.
+                        Tonana DeFi hub products works with TON; SOLANA; NEAR
+                        and other chains.
                       </Styled.BoxText>
                     </div>
-                    <Styled.LearnMore>
-                      <p>Learn More</p>
-                      <Styled.IconWrapper>
-                        <ChevronRightIcon />
-                      </Styled.IconWrapper>
-                    </Styled.LearnMore>
+                    <a href={'https://wiki.tonana.org/supported-chains'}>
+                      <Styled.LearnMore>
+                        <p>Learn More</p>
+                        <Styled.IconWrapper>
+                          <ChevronRightIcon />
+                        </Styled.IconWrapper>
+                      </Styled.LearnMore>
+                    </a>
+                  </Styled.Box>
+                  <Styled.Box>
+                    <div>
+                      <Styled.BoxHeading>
+                        How Tonana Launchpad works?
+                      </Styled.BoxHeading>
+                      <Styled.BoxText>
+                        Creators can submit their project. If people like the
+                        project, they can donate money to make it happen
+                      </Styled.BoxText>
+                    </div>
+                    <a
+                      href={
+                        'https://wiki.tonana.org/tonana-defi-hub/launchpad/whitepaper/how-it-works'
+                      }
+                    >
+                      <Styled.LearnMore>
+                        <p>Learn More</p>
+                        <Styled.IconWrapper>
+                          <ChevronRightIcon />
+                        </Styled.IconWrapper>
+                      </Styled.LearnMore>
+                    </a>
                   </Styled.Box>
                 </Styled.BottomContent>
               </div>

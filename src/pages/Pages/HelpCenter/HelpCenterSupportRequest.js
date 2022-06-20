@@ -1,20 +1,12 @@
-import React, { Component } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Input,
-  Label,
-  Alert,
-} from "reactstrap";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Container, Row, Col, Form, Input, Label, Alert } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 //Import Icons
-import FeatherIcon from "feather-icons-react";
+import FeatherIcon from 'feather-icons-react';
 
 //Import components
-import PageBreadcrumb from "../../../components/Shared/PageBreadcrumb";
+import PageBreadcrumb from '../../../components/Shared/PageBreadcrumb';
 
 class HelpCenterSupportRequest extends Component {
   constructor(props) {
@@ -22,9 +14,9 @@ class HelpCenterSupportRequest extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
-        { id: 2, name: "Help Center", link: "#" },
-        { id: 3, name: "Support" },
+        { id: 1, name: 'Landrick', link: '/index' },
+        { id: 2, name: 'Help Center', link: '#' },
+        { id: 3, name: 'Support' },
       ],
       isOpen: false,
     };
@@ -37,21 +29,21 @@ class HelpCenterSupportRequest extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.scrollNavigation, true);
+    window.addEventListener('scroll', this.scrollNavigation, true);
   }
 
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.scrollNavigation, true);
+    window.removeEventListener('scroll', this.scrollNavigation, true);
   }
 
   scrollNavigation = () => {
     var doc = document.documentElement;
     var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
     if (top > 80) {
-      document.getElementById("topnav").classList.add("nav-sticky");
+      document.getElementById('topnav').classList.add('nav-sticky');
     } else {
-      document.getElementById("topnav").classList.remove("nav-sticky");
+      document.getElementById('topnav').classList.remove('nav-sticky');
     }
   };
 
@@ -103,7 +95,7 @@ class HelpCenterSupportRequest extends Component {
                             </div>
                           </Col>
                           <Col md={6}>
-                            <div className="mb-3">
+                            {/* <div className="mb-3">
                               <Label className="form-label">
                                 Your Email{" "}
                                 <span className="text-danger">*</span>
@@ -123,7 +115,7 @@ class HelpCenterSupportRequest extends Component {
                                 className="form-control ps-5"
                                 placeholder="Your email :"
                               />
-                            </div>
+                            </div> */}
                           </Col>
                           <Col md={12}>
                             <div className="mb-3">
