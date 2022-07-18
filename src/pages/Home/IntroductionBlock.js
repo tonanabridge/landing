@@ -134,7 +134,7 @@ export const Link = styled.li`
 `;
 
 export const Box = styled.div`
-  background-color: #fd7e14;
+  background-color: #3c4858;
   color: #fff;
   padding: 20px;
   border-radius: 20px;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form, Input, Button } from 'reactstrap';
-import { FaMediumM, FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaMediumM, FaDiscord, FaTwitter, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 //Import Images
 import logolight from '../../assets/images/tonana.svg';
@@ -39,15 +39,11 @@ class Footer extends Component {
                 name="footercolumn"
               >
                 <h5
-                  className={
-                    this.props.isLight
-                      ? 'text-dark footer-head'
-                      : 'text-dark footer-head'
-                  }
+                  className="text-second"
                 >
                   Sign up for the Updates
                 </h5>
-                <p className={this.props.isLight ? 'mt-4 text-dark' : 'mt-4'}>
+                <p className='mt-4 color-main'>
                   We'll send you fresh news about our platform, including new
                   features and opportunities for the community.
                 </p>
@@ -74,8 +70,8 @@ class Footer extends Component {
                   </li> */}
 
                   <li className="list-inline-item me-1">
-                    <a
-                      href="https://github.com/SEPEZHO/tonana"
+                    {/* <a
+                      href="https://github.com/tonanadao"
                       className="icon-hover rounded"
                       target="_blank"
                     >
@@ -83,18 +79,43 @@ class Footer extends Component {
                         icon="github"
                         className="fea icon-sm fea-social text-dark"
                       />
-                    </a>
+                    </a> */}
                   </li>
 
                   <li className="list-inline-item me-1">
                     <a
-                      href="https://twitter.com/TonanaBridge"
+                      href="https://twitter.com/Tonanadao"
                       target="_blank"
                       className="icon-hover rounded"
                     >
                       <FaTwitter
                         icon="twitter"
-                        className="fea icon-sm fea-social text-dark"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+                  
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://linkedin.com/tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaLinkedin
+                        icon="linkedin"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://t.me/tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaTelegram
+                        icon="telegram"
+                        className="fea icon-sm fea-social color-main"
                       />
                     </a>
                   </li>
@@ -107,6 +128,7 @@ class Footer extends Component {
                       />
                     </a>
                   </li> */}
+
                 </ul>
               </Col>
 
@@ -125,112 +147,26 @@ class Footer extends Component {
                     padding: '0 24px 0 0',
                   }}
                 >
-                  <Link
-                    to={{
-                      pathname:
-                        'https://docs.google.com/forms/d/e/1FAIpQLSf07V30cIuaONnQxSVWfWdZ2s6ik7uJfuWy_IR06JdAJCogBw/viewform',
-                    }}
-                    target="_blank"
-                    id="buyButton"
-                    className="btn btn-warning btn-pills"
-                  >
-                    Submit your email here
-                    <ChevronRightIcon
-                      style={{ width: '18px', margin: '-1px -5px 0 2px ' }}
-                    />
-                  </Link>
-                </div>
-                {/* <div className="subcribe-form mt-4">
+                  <div className="subcribe-form mt-4">
                     <div className="input-mailchimp mailchimp-btn subscribe-form">
                       <SubscribeFrom
-                        url="https://chat.us14.list-manage.com/subscribe/post?u=63396c3932c39d351c5a97e14&id=5b38a1847d"
+                        url="https://tonana.us17.list-manage.com/subscribe/post?u=dee8fa21addcdbaff28096df7&id=a54c0269c1"
                       />
                     </div>
                   </div>
-                 */}
+                
+                </div>
+                
               </Col>
             </Row>
-            {/* <Row>
-              <Col
-                lg="6"
-                md="6"
-                xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              ></Col>
-              <Col
-                lg="3"
-                md="3"
-                xs="6"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                <h5
-                  className={
-                    this.props.isLight
-                      ? 'text-dark footer-head'
-                      : 'text-dark footer-head'
-                  }
-                >
-                  App
-                </h5>
-                <ul className="list-unstyled text-dark footer-list mt-4">
-                  {this.state.grid1.map((grid, key) => (
-                    <li className="text-dark" key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? 'text-dark' : 'text-foot'
-                        }
-                      >
-                        <i className="mdi mdi-chevron-right text-dark me-1"></i>{' '}
-                        {grid.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </Col>
-
-              <Col
-                lg="3"
-                md="3"
-                xs="6"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                <h5
-                  className={
-                    this.props.isLight
-                      ? 'text-dark footer-head'
-                      : 'text-dark footer-head'
-                  }
-                >
-                  Navigation
-                </h5>
-                <ul className="list-unstyled footer-list mt-4">
-                  {this.state.grid2.map((grid, key) => (
-                    <li key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? 'text-dark' : 'text-foot'
-                        }
-                      >
-                        <i className="mdi mdi-chevron-right text-dark me-1 text-dark"></i>
-                        {grid.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </Col>
-            </Row> */}
           </Container>
+
         </footer>
         <footer className="footer footer-bar">
           <Container className="text-center">
             <Row className="align-items-center">
               <Col sm="8">
-                <div className="text-sm-start text-dark">
+                <div className="text-sm-start text-light">
                   <p className="mb-0">© 2022 tonana.org</p>
                 </div>
               </Col>

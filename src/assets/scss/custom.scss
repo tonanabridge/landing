@@ -87,14 +87,14 @@ a {
   bottom: 30px;
   transition: right 0.5s;
   cursor: pointer;
-  background-color: #2eca8b;
+  background-color: #3c4858;
   padding: 5px;
   align-items: center;
   border-radius: 5px !important;
   outline: none;
 
   &:hover {
-    background-color: #00CC99 !important;
+    background-color: #3c4858 !important;
     svg {
       stroke: $white !important;
     }

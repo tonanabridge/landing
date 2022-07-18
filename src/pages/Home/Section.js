@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import Tonana from '../../assets/images/tonana.png';
+import { FaMediumM, FaDiscord, FaTwitter, FaLinkedin, FaTelegram, FaGithub } from 'react-icons/fa';
 
 export default class Section extends Component {
   render() {
@@ -9,39 +10,93 @@ export default class Section extends Component {
         <section className="bg-home d-flex align-items-center">
           <Container>
             <Row className="justify-content-center">
-              <Col lg={6} sm={6} xs={12}>
+              <Col lg={6} sm={6} xs={11}>
                 <div className="title-heading text-left mt-5 pt-4">
-                  <h4 className="heading fw-bold text-dark title-dark mb-3">
+                  <h4 className="heading fw-bold color-main mb-3">
                     TONANA <span className="hero-span">DEFI</span> HUB
                   </h4>
                   <h4
-                    className="fw-bold text-dark text-align title-dark mb-4"
-                    style={{ width: '500px', textAlign: 'justify' }}
+                    className="fw-bold color-main text-align mb-4"
                   >
                     Community-run hackathon-born multichain dapp ecosystem
                   </h4>
                   <div className="d-flex">
-                    <div
-                      className="d-flex justify-content-left"
-                      style={{ margin: '0 10px 0 0' }}
+
+
+                  <ul
+                  className={
+                    this.props.isLight
+                      ? 'list-unstyled social-icon social mb-0 m t-4'
+                      : 'list-unstyled social-icon foot-social-icon mb-0 mt-4'
+                  }
+                >
+                  {/* <li className="list-inline-item me-1">
+                    <a href="" className="icon-hover rounded" target="_blank">
+                      <FaMediumM className="fea icon-sm fea-social text-dark" />
+                    </a>
+                  </li> */}
+
+                  <li className="list-inline-item me-1">
+                    {/* <a
+                      href="https://github.com/tonanadao"
+                      className="icon-hover rounded"
+                      target="_blank"
                     >
-                      <a
-                        href="https://launchpad.tonana.org"
-                        className="btn btn-warning btn-pills"
-                      >
-                        NFT-based launchpad{' '}
-                        <i className="uil uil-angle-right-b"></i>
-                      </a>
-                    </div>
-                    <div className="d-flex justify-content-left">
-                      <a
-                        href="https://app.tonana.org"
-                        className="btn btn-warning btn-pills"
-                      >
-                        Decentrilized bridge{' '}
-                        <i className="uil uil-angle-right-b"></i>
-                      </a>
-                    </div>
+                      <FaGithub
+                        icon="github"
+                        className="fea icon-sm fea-social text-dark"
+                      />
+                    </a> */}
+                  </li>
+
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://twitter.com/Tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaTwitter
+                        icon="twitter"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+                  
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://linkedin.com/tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaLinkedin
+                        icon="linkedin"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://t.me/tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaTelegram
+                        icon="telegram"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+
+                  {/* <li className="list-inline-item me-1">
+                    <a href="" target="_blank" className="icon-hover rounded">
+                      <FaDiscord
+                        icon="discord"
+                        className="fea icon-sm fea-social text-dark"
+                      />
+                    </a>
+                  </li> */}
+
+                </ul>
                   </div>
                 </div>
               </Col>

@@ -60,9 +60,9 @@ class Topbar extends Component {
                 href="https://app.tonana.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-warning btn-pills"
+                className="btn btn-app btn-pills"
               >
-                Launch bridge app
+                Launch app
               </a>
             </div>
             <div className="menu-extras">

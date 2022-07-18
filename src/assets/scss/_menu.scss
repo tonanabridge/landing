@@ -162,7 +162,7 @@
       }
       > a {
         display: block;
-        color: $dark;
+        color: $light;
         font-size: 13px;
         background-color: transparent !important;
         font-weight: 700;
@@ -206,7 +206,8 @@
   &.scroll {
     background-color: $white;
     border: none;
-    box-shadow: $shadow;
+    box-shadow: #FFC916 !important;
+    ;
     .navigation-menu {
       > li {
         > a {
@@ -249,7 +250,7 @@
 
   &.nav-sticky {
     background: $white;
-    box-shadow: $shadow;
+    box-shadow: #FFC916 !important;
     .navigation-menu {
       &.nav-light {
         > li {
@@ -374,7 +375,7 @@
           transition: all 0.2s ease;
           border-radius: 6px;
           background-color: $white;
-          box-shadow: $shadow;
+          box-shadow: #FFC916 !important;
           li {
             position: relative;
             a {
@@ -545,7 +546,8 @@
 @media (max-width: 991px) {
   #topnav {
     background-color: $white;
-    box-shadow: $shadow;
+    box-shadow: #FFC916 !important;
+    ;
     min-height: 74px;
     .logo {
       .l-dark {

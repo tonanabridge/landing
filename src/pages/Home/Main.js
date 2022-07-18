@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import images
 import { Col, Container, Row } from 'reactstrap';
-import Hero from '../../assets/images/hero.png';
+import Hero from '../../assets/images/tonanachain.png';
 import Connect from '../../assets/images/Connect.svg';
 import * as Styled from './IntroductionBlock';
 import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/solid';
@@ -12,12 +12,12 @@ export default class Main extends Component {
       <React.Fragment>
         <Container className="mt-100 mt-60">
           <Row className="align-items-space-between">
-            <Col lg={5} md={6} style={{ margin: '-40px 20px 0 80px' }}>
+            <Col lg={5} md={6}>
               <img src={Hero} className="main-ill img-fluid" alt="" />
             </Col>
 
             <Col lg={5} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <div className="section-title ms-lg-5">
+              <div className="section-title ms-lg-5 text-light">
                 <h4 className="title mb-4">What's tonana</h4>
                 Tonana Defi Hub is a decentralized software-development
                 organization working hand-in-hand with entrepreneurs and
@@ -25,14 +25,14 @@ export default class Main extends Component {
                 <br />
                 <br />
                 With rich experience in commercial blockchain development and
-                participation in the blockchain community, Tonan's team is
+                participation in the blockchain community, Tonana team is
                 committed to developing and testing cutting-edge ideas and
                 business models that make sense.
                 <br />
                 <br />
                 <a
                   href="https://wiki.tonana.org/"
-                  className="mt-3 h6 btn btn-warning btn-pills"
+                  className="mt-3 h6 btn btn-app btn-pills"
                 >
                   Find Out More <i className="uil uil-angle-right-b"></i>
                 </a>
