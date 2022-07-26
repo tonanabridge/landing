@@ -2,6 +2,8 @@
 import React, { Component, Suspense } from 'react';
 import Section from './Section';
 import Main from './Main';
+import BlogBox from './BlogBox';
+
 
 // Scroll up button
 import ScrollUpButton from 'react-scroll-up-button';
@@ -66,6 +68,7 @@ class IndexRoot extends Component {
           <Topbar />
             <Section />
             <Main />
+            <BlogBox />
           <Footer />
           <ScrollUpButton
             ContainerClassName="classForContainer"
