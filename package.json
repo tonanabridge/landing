@@ -2,7 +2,7 @@
   "name": "tonana-landing",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://tonanadao.github.io/landing/",
+  "homepage": "https://tonanadao.github.io/landing",
   "dependencies": {
     "@babel/runtime": "^7.17.2",
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
