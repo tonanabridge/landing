@@ -1,43 +1,35 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, Input, Label, Button } from "reactstrap";
-
-//Import Icons
-import FeatherIcon from "feather-icons-react";
-
-
+import React, { Component } from 'react';
+import { Container, Row, Col, Form, Input, Button } from 'reactstrap';
+import { FaMediumM, FaDiscord, FaTwitter, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 //Import Images
-import logolight from "../../assets/images/tonana.png";
-import logodark from "../../assets/images/tonana.png";
+import logolight from '../../assets/images/logo.svg';
+import logodark from '../../assets/images/logo.svg';
+//Import Icons
+import SubscribeFrom from 'react-mailchimp-subscribe';
+import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       grid1: [
-        { title: "About us", link: "/page-aboutus" },
-        { title: "Services", link: "/page-services" },
-        { title: "Team", link: "/page-team" },
-        { title: "Pricing", link: "/page-pricing" },
-        { title: "Project", link: "/page-work" },
-        { title: "Careers", link: "/page-jobs" },
-        { title: "Blog", link: "/page-blog" },
-        { title: "Login", link: "/page-cover-login" },
+        { title: 'Chat', link: '/' },
+        { title: 'Membership', link: '/' },
       ],
       grid2: [
-        { title: "Terms of Services", link: "/page-terms" },
-        { title: "Privacy Policy", link: "/page-privacy" },
-        { title: "Documentation", link: "/documentation" },
-        { title: "Changelog", link: "/changelog" },
-        { title: "Components", link: "/components" },
+        { title: 'About', link: '/' },
+        { title: 'Blog', link: '/' },
+        { title: 'Integrations', link: '/' },
+        { title: 'Developers', link: '/' },
+        { title: 'Docs', link: '/' },
       ],
     };
   }
-
   render() {
     return (
       <React.Fragment>
-        <footer className={this.props.isLight ? "footer bg-light" : "footer"}>
+        <footer className={this.props.isLight ? 'footer bg-dark' : 'footer'}>
           <Container>
             <Row>
               <Col
@@ -47,171 +39,137 @@ class Footer extends Component {
                 name="footercolumn"
               >
                 <h5
-                  className={
-                    this.props.isLight
-                      ? "text-dark footer-head"
-                      : "text-light footer-head"
-                  }
+                  className="text-second"
                 >
                   Sign up for the Updates
                 </h5>
-                <p className={this.props.isLight ? "mt-4 text-light" : "mt-4"}>
-                We'll send you fresh news about our platform, including new features and opportunities for the community.
+                <p className='mt-4 color-main'>
+                  We'll send you fresh news about our platform, including new
+                  features and opportunities for the community.
                 </p>
 
-                <ul className={this.props.isLight ? "list-unstyled social-icon social mb-0 m t-4" : "list-unstyled social-icon foot-social-icon mb-0 mt-4"}>
-                  <li className="list-inline-item me-1">
-                    <Link to="" className="rounded">
-                      <FeatherIcon
-                        icon="facebook"
-                        className="fea icon-sm fea-social text-light"
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="" className="rounded">
-                      <FeatherIcon
-                        icon="instagram"
-                        className="fea icon-sm fea-social text-light"
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="" className="rounded">
-                      <FeatherIcon
-                        icon="twitter"
-                        className="fea icon-sm fea-social text-light"
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="" className="rounded">
-                      <FeatherIcon
-                        icon="linkedin"
-                        className="fea icon-sm fea-social text-light"
-                      />
-                    </Link>
-                  </li>
-                </ul>
-              </Col>
-
-  
-
-              <Col
-                lg="6"
-                md="6"
-                xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                  <div className="subcribe-form mt-4">
-                                    <Form>
-                                        <div className="mb-2">
-                                            <Input type="email" id="email" name="email" className="rounded-pill" placeholder="E-mail :" />
-                                            <Button type="submit" className="btn btn-pills btn-warning">Subscribe</Button>
-                                        </div>
-                                    </Form>
-                                </div>
-                
-              </Col>
-            </Row>
-            <Row>    
-            <Col
-                lg="6"
-                md="6"
-                xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-               
-               <Link to="#" className="logo-footer">
-                  <img
+                <Link to="" className="logo-footer">
+                  {/* <img
                     src={this.props.isLight ? logodark : logolight}
                     height="24"
                     alt=""
-                  />
-                </Link> 
+                  /> */}
+                </Link>
 
-              </Col>     
-                 <Col
-                lg="3"
-                md="3"
-                xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                <h5
+                <ul
                   className={
                     this.props.isLight
-                      ? "text-dark footer-head"
-                      : "text-light footer-head"
+                      ? 'list-unstyled social-icon social mb-0 m t-4'
+                      : 'list-unstyled social-icon foot-social-icon mb-0 mt-4'
                   }
                 >
-                  App
-                </h5>
-                <ul className="list-unstyled footer-list mt-4">
-                  {this.state.grid1.map((grid, key) => (
-                    <li key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? "text-light" : "text-foot"
-                        }
-                      >
-                        <i className="mdi mdi-chevron-right me-1"></i>{" "}
-                        {grid.title}
-                      </Link>
-                    </li>
-                  ))}
+                  {/* <li className="list-inline-item me-1">
+                    <a href="" className="icon-hover rounded" target="_blank">
+                      <FaMediumM className="fea icon-sm fea-social text-dark" />
+                    </a>
+                  </li> */}
+
+                  <li className="list-inline-item me-1">
+                    {/* <a
+                      href="https://github.com/tonanadao"
+                      className="icon-hover rounded"
+                      target="_blank"
+                    >
+                      <FaGithub
+                        icon="github"
+                        className="fea icon-sm fea-social text-dark"
+                      />
+                    </a> */}
+                  </li>
+
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://twitter.com/Tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaTwitter
+                        icon="twitter"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+                  
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://linkedin.com/tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaLinkedin
+                        icon="linkedin"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+                  <li className="list-inline-item me-1">
+                    <a
+                      href="https://t.me/tonanadao"
+                      target="_blank"
+                      className="icon-hover rounded"
+                    >
+                      <FaTelegram
+                        icon="telegram"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+
+                  {/* <li className="list-inline-item me-1">
+                    <a href="" target="_blank" className="icon-hover rounded">
+                      <FaDiscord
+                        icon="discord"
+                        className="fea icon-sm fea-social text-dark"
+                      />
+                    </a>
+                  </li> */}
+
                 </ul>
               </Col>
 
               <Col
-                lg="3"
-                md="3"
+                lg="6"
+                md="6"
                 xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                className="align-items-left"
                 name="footercolumn"
               >
-                <h5
-                  className={
-                    this.props.isLight
-                      ? "text-dark footer-head"
-                      : "text-light footer-head"
-                  }
+                <div
+                  className="buy-button"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'flex-end',
+                    padding: '0 24px 0 0',
+                  }}
                 >
-                  Navigation
-                </h5>
-                <ul className="list-unstyled footer-list mt-4">
-                  {this.state.grid2.map((grid, key) => (
-                    <li key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? "text-light" : "text-foot"
-                        }
-                      >
-                        <i className="mdi mdi-chevron-right me-1 text-light"></i>
-                        {grid.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                  <div className="subcribe-form mt-4">
+                    <div className="input-mailchimp mailchimp-btn subscribe-form">
+                      <SubscribeFrom
+                        url="https://tonana.us17.list-manage.com/subscribe/post?u=dee8fa21addcdbaff28096df7&id=a54c0269c1"
+                      />
+                    </div>
+                  </div>
+                
+                </div>
+                
               </Col>
-              </Row>
+            </Row>
           </Container>
+
         </footer>
         <footer className="footer footer-bar">
           <Container className="text-center">
             <Row className="align-items-center">
               <Col sm="8">
                 <div className="text-sm-start text-light">
-                  <p className="mb-0 text-center">
-                    © 2022 quilt.
-                  </p>
+                  <p className="mb-0">© 2022 tonana.org</p>
                 </div>
               </Col>
-
             </Row>
           </Container>
         </footer>
@@ -219,5 +177,4 @@ class Footer extends Component {
     );
   }
 }
-
 export default Footer;

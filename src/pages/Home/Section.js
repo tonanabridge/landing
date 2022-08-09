@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import Tonana from '../../assets/images/tonana.png';
+import Logo from '../../assets/images/logo.svg';
 import { FaMediumM, FaDiscord, FaTwitter, FaLinkedin, FaTelegram, FaGithub } from 'react-icons/fa';
 
 export default class Section extends Component {
@@ -102,7 +102,7 @@ export default class Section extends Component {
               </Col>
               <Col lg={6} sm={4} xs={6} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <div className="text-md-end text-center ms-lg-4">
-                  <img src={Tonana} className="Tonana-logo" alt="" />
+                  <img src={Logo} className="Tonana-logo" alt="tonana" width={500} />
                 </div>
               </Col>
             </Row>

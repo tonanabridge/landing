@@ -3,6 +3,9 @@ import React, { Component, Suspense } from 'react';
 import Section from './Section';
 import Main from './Main';
 import BlogBox from './BlogBox';
+import TeamBox from '../../components/Shared/TeamBox';
+import WorkProcess from '../../components/Shared/WorkProcess';
+
 
 
 // Scroll up button
@@ -12,8 +15,8 @@ import ScrollUpButton from 'react-scroll-up-button';
 import FeatherIcon from 'feather-icons-react';
 
 // Import sub components
-const Topbar = React.lazy(() => import('./Topbar'));
-const Footer = React.lazy(() => import('./Footer'));
+const Topbar = React.lazy(() => import('../../components/Layout/Topbar'));
+const Footer = React.lazy(() => import('../../components/Layout/Footer'));
 
 const CustomDot = () => {
   return (
@@ -68,7 +71,7 @@ class IndexRoot extends Component {
           <Topbar />
             <Section />
             <Main />
-            <BlogBox />
+            {/* <BlogBox /> */}
           <Footer />
           <ScrollUpButton
             ContainerClassName="classForContainer"

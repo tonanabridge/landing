@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 //import images
 import { Col, Container, Row } from 'reactstrap';
-import Hero from '../../assets/images/tonanachain.png';
-import Connect from '../../assets/images/Connect.svg';
+import Multichain from '../../assets/images/multichain.svg';
 import * as Styled from './IntroductionBlock';
 import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
@@ -10,10 +9,10 @@ export default class Main extends Component {
   render() {
     return (
       <React.Fragment>
-        <Container className="mt-100 mt-60">
+        <Container className="mt-10">
           <Row className="align-items-space-between">
-            <Col lg={5} md={6}>
-              <img src={Hero} className="main-ill img-fluid" alt="" />
+            <Col lg={7} md={6}>
+              <img src={Multichain} className="main-ill img-fluid" alt="" />
             </Col>
 
             <Col lg={5} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
