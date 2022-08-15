@@ -18,7 +18,7 @@ export default class Section extends Component {
                   <h4
                     className="fw-bold color-main text-align mb-4"
                   >
-                    Community-run hackathon-born multichain dapp ecosystem
+                    Blockchain connector for liquidity & protocols
                   </h4>
                   <div className="d-flex">
 
@@ -37,16 +37,16 @@ export default class Section extends Component {
                   </li> */}
 
                   <li className="list-inline-item me-1">
-                    {/* <a
+                    <a
                       href="https://github.com/tonanadao"
                       className="icon-hover rounded"
                       target="_blank"
                     >
                       <FaGithub
                         icon="github"
-                        className="fea icon-sm fea-social text-dark"
+                        className="fea icon-sm fea-social color-main  "
                       />
-                    </a> */}
+                    </a>
                   </li>
 
                   <li className="list-inline-item me-1">
@@ -64,7 +64,7 @@ export default class Section extends Component {
                   
                   <li className="list-inline-item me-1">
                     <a
-                      href="https://linkedin.com/tonanadao"
+                      href="https://www.linkedin.com/company/tonana/"
                       target="_blank"
                       className="icon-hover rounded"
                     >

@@ -53,11 +53,10 @@ export default class Main extends Component {
                   <Styled.Box>
                     <div>
                       <Styled.BoxHeading>
-                        What is Tonana Launchpad?
+                        What is Tonana Connector
                       </Styled.BoxHeading>
                       <Styled.BoxText>
-                        Tonana Launchpad is a funding platform for creative and
-                        research projects.
+                      Connectors allows investors to provide liquidity into pools without having to bridge over to the needed chain. It provides a fully native experience for users on any supported chain.
                       </Styled.BoxText>
                     </div>
                     <a
@@ -80,7 +79,7 @@ export default class Main extends Component {
                       </Styled.BoxHeading>
                       <Styled.BoxText>
                         Tonana cross-chain bridge uses a lock-and-mint model for
-                        moving value between chains.
+                        moving value between chains as well as wrapped assets.
                       </Styled.BoxText>
                     </div>
                     <a
@@ -99,11 +98,11 @@ export default class Main extends Component {
                   <Styled.Box>
                     <div>
                       <Styled.BoxHeading>
-                        Wich chains Tonana support?
+                        Which chains Tonana support?
                       </Styled.BoxHeading>
                       <Styled.BoxText>
-                        Tonana DeFi hub products works with TON; SOLANA; NEAR
-                        and other chains.
+                        Tonana DeFi hub products works with TON; SOLANA; NEAR; Cosmos
+                        and other chains are in roadmap.
                       </Styled.BoxText>
                     </div>
                     <a href={'https://wiki.tonana.org/supported-chains'}>
@@ -118,11 +117,10 @@ export default class Main extends Component {
                   <Styled.Box>
                     <div>
                       <Styled.BoxHeading>
-                        How Tonana Launchpad works?
+                        How Connectors works?
                       </Styled.BoxHeading>
                       <Styled.BoxText>
-                        Creators can submit their project. If people like the
-                        project, they can donate money to make it happen
+                      Connectors is an innovative hybrid solution. It combines the benefits of a bridge — simple integration and low governance overhead, with the benefits of a fork — composability with pooled liquidity.
                       </Styled.BoxText>
                     </div>
                     <a

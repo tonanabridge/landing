@@ -70,16 +70,16 @@ class Footer extends Component {
                   </li> */}
 
                   <li className="list-inline-item me-1">
-                    {/* <a
+                    <a
                       href="https://github.com/tonanadao"
                       className="icon-hover rounded"
                       target="_blank"
                     >
                       <FaGithub
                         icon="github"
-                        className="fea icon-sm fea-social text-dark"
+                        className="fea icon-sm fea-social color-main  "
                       />
-                    </a> */}
+                    </a>
                   </li>
 
                   <li className="list-inline-item me-1">
@@ -97,7 +97,7 @@ class Footer extends Component {
                   
                   <li className="list-inline-item me-1">
                     <a
-                      href="https://linkedin.com/tonanadao"
+                      href="https://www.linkedin.com/company/tonana/"
                       target="_blank"
                       className="icon-hover rounded"
                     >

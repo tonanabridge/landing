@@ -35,6 +35,8 @@ class Topbar extends Component {
           href: 'https://twitter.com/tonana_dao',
         },
       ],
+ 
+        
       isOpen: false,
     };
     this.toggleLine = this.toggleLine.bind(this);
@@ -45,6 +47,7 @@ class Topbar extends Component {
   }
 
   render() {
+    //Store all Navigationbar Id into TargetID variable(Used for Scrollspy)
     let targetId = this.state.navItems.map((item) => {
       return item.idnm;
     });
@@ -90,12 +93,12 @@ class Topbar extends Component {
             >
               <div
                 id="navigation"
-                style={{ display: this.state.isOpen ? 'block' : 'none' }}
+                style={{ display: this.state.isOpen ? "block" : "none" }}
               >
                 <ul className="navigation-menu">
                   {this.state.navItems.map((item, key) => (
                     <li key={key} className="has-submenu">
-                      <a href={item.href}> {item.navheading}</a>
+                      <a href={item.href} target="_blank"> {item.navheading}</a>
                     </li>
                   ))}
                 </ul>

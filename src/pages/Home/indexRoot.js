@@ -15,8 +15,8 @@ import ScrollUpButton from 'react-scroll-up-button';
 import FeatherIcon from 'feather-icons-react';
 
 // Import sub components
-const Topbar = React.lazy(() => import('../../components/Layout/Topbar'));
-const Footer = React.lazy(() => import('../../components/Layout/Footer'));
+const Topbar = React.lazy(() => import('./Topbar'));
+const Footer = React.lazy(() => import('./Footer'));
 
 const CustomDot = () => {
   return (
