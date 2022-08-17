@@ -124,7 +124,7 @@ class Footer extends Component {
                     <a href="https://discord.gg/wy9x6jF8PC" target="_blank" className="icon-hover rounded">
                       <FaDiscord
                         icon="discord"
-                        className="fea icon-sm fea-social text-dark"
+                        className="fea icon-sm fea-social color-main"
                       />
                     </a>
                   </li>
