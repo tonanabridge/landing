@@ -30,7 +30,7 @@ export default class Main extends Component {
                 <br />
                 <br />
                 <a
-                  href="https://wiki.tonana.org/"
+                  href="https://docs.tonana.org/"
                   className="mt-3 h6 btn btn-app btn-pills"
                 >
                   Find Out More <i className="uil uil-angle-right-b"></i>
@@ -61,7 +61,7 @@ export default class Main extends Component {
                     </div>
                     <a
                       href={
-                        'https://wiki.tonana.org/tonana-defi-hub/launchpad/whitepaper/what-is-tonana-launchpad'
+                        'https://docs.tonana.org/'
                       }
                     >
                       <Styled.LearnMore>
@@ -84,7 +84,7 @@ export default class Main extends Component {
                     </div>
                     <a
                       href={
-                        'https://wiki.tonana.org/tonana-defi-hub/bridge/whitepaper/how-it-works'
+                        'https://docs.tonana.org/'
                       }
                     >
                       <Styled.LearnMore>
@@ -105,7 +105,7 @@ export default class Main extends Component {
                         and other chains are in roadmap.
                       </Styled.BoxText>
                     </div>
-                    <a href={'https://wiki.tonana.org/supported-chains'}>
+                    <a href={'https://docs.tonana.org'}>
                       <Styled.LearnMore>
                         <p>Learn More</p>
                         <Styled.IconWrapper>
@@ -125,7 +125,7 @@ export default class Main extends Component {
                     </div>
                     <a
                       href={
-                        'https://wiki.tonana.org/tonana-defi-hub/launchpad/whitepaper/how-it-works'
+                        'https://docs.tonana.org/'
                       }
                     >
                       <Styled.LearnMore>
