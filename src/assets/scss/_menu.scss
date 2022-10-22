@@ -94,7 +94,7 @@
 
   //Buy button
   .buy-button {
-    float: right;
+    
     line-height: 68px;
     > li {
       line-height: initial;
@@ -547,7 +547,8 @@
   #topnav {
     background-color: $white;
     box-shadow: #FFC916 !important;
-    ;
+    align-items: center;
+  
     min-height: 74px;
     .logo {
       .l-dark {
@@ -558,7 +559,7 @@
       }
     }
     .container {
-      width: auto;
+      width: 100%;
     }
 
     #navigation {
@@ -684,6 +685,10 @@
 }
 @media (max-width: 768px) {
   #topnav {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
     .navigation-menu {
       .has-submenu {
         .menu-arrow {
@@ -694,9 +699,14 @@
     }
     .buy-button {
       padding: 3px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 68px;
+      float: none !important;
     }
-  }
-}
+
+    }
 
 @media (min-width: 768px) {
   #topnav {
@@ -743,9 +753,6 @@
 
 @media (max-width: 375px) {
   #topnav {
-    .buy-button {
-      display: none;
-    }
     .buy-menu-btn {
       display: block !important;
       margin: 0 10px;

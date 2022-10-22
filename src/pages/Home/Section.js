@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/logotonana.svg';
 import { FaMediumM, FaDiscord, FaTwitter, FaLinkedin, FaTelegram, FaGithub } from 'react-icons/fa';
 
 export default class Section extends Component {

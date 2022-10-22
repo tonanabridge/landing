@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import ScrollspyNav from './scrollSpy';
 
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/logotonana.svg';
 
 class Topbar extends Component {
   constructor(props) {
@@ -58,16 +58,7 @@ class Topbar extends Component {
             <Link className="logo" to="/">
               <img src={Logo} height="60" alt="" />
             </Link>
-            <div className="buy-button">
-              <a
-                href="https://app.tonana.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-app btn-pills"
-              >
-                Launch app
-              </a>
-            </div>
+            
             <div className="menu-extras">
               <div className="menu-item">
                 <Link
@@ -84,6 +75,16 @@ class Topbar extends Component {
                   </div>
                 </Link>
               </div>
+            </div>
+            <div className="buy-button">
+              <a
+                href="https://app.tonana.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-app btn-pills"
+              >
+                Launch app
+              </a>
             </div>
             <ScrollspyNav
               scrollTargetIds={targetId}
