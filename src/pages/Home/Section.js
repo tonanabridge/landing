@@ -10,7 +10,7 @@ export default class Section extends Component {
         <section className="bg-home d-flex align-items-center">
           <Container>
             <Row className="justify-content-center">
-              <Col lg={6} sm={6} xs={11}>
+              <Col lg={6} sm={12} xs={12}>
                 <div className="title-heading text-left mt-5 pt-4">
                   <h4 className="heading fw-bold color-main mb-3">
                     TONANA <span className="hero-span">DEFI</span> HUB
@@ -100,9 +100,9 @@ export default class Section extends Component {
                   </div>
                 </div>
               </Col>
-              <Col lg={6} sm={4} xs={6} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
+              <Col lg={6} sm={12} xs={12}>
                 <div className="text-md-end text-center ms-lg-4">
-                  <img src={Logo} className="Tonana-logo" alt="tonana" width={500} />
+                  <img src={Logo} className="Tonana-logo" alt="tonana" width={400} />
                 </div>
               </Col>
             </Row>
