@@ -43,7 +43,7 @@ export default class Main extends Component {
         <Container className="">
           <Row
             className="align-items-center"
-            style={{ margin: '200px 0 200px 0' }}
+            style={{ margin: '0 0 50 0' }}
           >
             <Col className="order-2 order-md-1 mt-4 mt-sm-0 pt-sm-0">
               <div className="section-title ">
