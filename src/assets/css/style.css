@@ -5180,6 +5180,20 @@ p {
     animation: Tonana-logo-spin infinite 20s linear;
   }
 }
+
+@keyframes Tonana-under-development {
+  from {
+    transform: skewY();
+  }
+  to {
+    transform: skewY(90deg)
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Tonana-under {
+    animation: Tonana-under-development infinite 20s linear;
+  }
+}
 .footer {
   background: transparent !important;
   color: #3c4858 !important;

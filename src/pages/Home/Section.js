@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import Logo from '../../assets/images/logotonana.svg';
-import { FaMediumM, FaDiscord, FaTwitter, FaLinkedin, FaTelegram, FaGithub } from 'react-icons/fa';
+import { FaMedium, FaDiscord, FaTwitter, FaLinkedin, FaTelegram, FaGithub} from 'react-icons/fa';
 
 export default class Section extends Component {
   render() {
@@ -12,13 +12,16 @@ export default class Section extends Component {
             <Row className="justify-content-center">
               <Col lg={6} sm={12} xs={12}>
                 <div className="title-heading text-left mt-5 pt-4">
+                  <h3 className="heading fw-bold color-main mb-3">
+                    TONANA 
+                  </h3>
                   <h4 className="heading fw-bold color-main mb-3">
-                    TONANA <span className="hero-span">DEFI</span> HUB
+                   <span className="hero-span">Cross-chain messanging protocol</span>
                   </h4>
                   <h4
                     className="fw-bold color-main text-align mb-4"
                   >
-                    Blockchain connector for liquidity & protocols
+                  for liquidity & protocols
                   </h4>
                   <div className="d-flex">
 
@@ -96,13 +99,22 @@ export default class Section extends Component {
                     </a>
                   </li>
 
+                  <li className="list-inline-item me-1">
+                    <a href="https://tonanadao.medium.com" target="_blank" className="icon-hover rounded">
+                      <FaMedium
+                        icon="medium"
+                        className="fea icon-sm fea-social color-main"
+                      />
+                    </a>
+                  </li>
+
                 </ul>
                   </div>
                 </div>
               </Col>
               <Col lg={6} sm={12} xs={12}>
-                <div className="text-md-end text-center ms-lg-4">
-                  <img src={Logo} className="Tonana-logo" alt="tonana" width={400} />
+                <div className="text-md-end align-items-center mt-100">
+                  <img src={Logo} className="Tonana-logo" alt="tonana" width={350} />
                 </div>
               </Col>
             </Row>

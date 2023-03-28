@@ -10,7 +10,8 @@ export default class Main extends Component {
     return (
       <React.Fragment>
         <Container className="mt-10">
-          <Row className="align-items-space-between">
+
+          {/* <Row className="align-items-space-between">
             <Col lg={7} md={6}>
               <img src={Multichain} className="main-ill img-fluid" alt="" />
             </Col>
@@ -37,11 +38,11 @@ export default class Main extends Component {
                 </a>
               </div>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
 
         <Container className="">
-          <Row
+          {/* <Row
             className="align-items-center"
             style={{ margin: '0 0 50 0' }}
           >
@@ -139,10 +140,8 @@ export default class Main extends Component {
                 </Styled.BottomContent>
               </div>
             </Col>
-            {/* <Col lg={5} md={6} className="order-1 order-md-2">
-              <img src={Connect} className="main-ill img-fluid" alt="" />
-            </Col> */}
-          </Row>
+           
+          </Row> */}
         </Container>
       </React.Fragment>
     );
