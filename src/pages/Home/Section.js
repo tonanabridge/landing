@@ -16,7 +16,7 @@ export default class Section extends Component {
                     TONANA 
                   </h3>
                   <h4 className="heading fw-bold color-main mb-3">
-                   <span className="hero-span">Cross-chain messanging protocol</span>
+                   <span className="hero-span">Cross-chain messaging protocol</span>
                   </h4>
                   <h4
                     className="fw-bold color-main text-align mb-4"
